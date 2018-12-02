@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.0cm, vmargin=1cm]{geometry}
+\usepackage[hmargin=1.2cm, vmargin=1cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -35,7 +35,9 @@
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm} % start everyth
 \newcommand{\lastupdated}{\begin{textblock}{60}(150,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+%\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+% \color{date}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on
 \today
 \end{textblock}}
@@ -48,7 +50,7 @@ Last Updated on
 		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{14pt}\selectfont #3}
+	\centering{ \color{headings}\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{10pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{-16pt}
 }
@@ -70,7 +72,8 @@ Last Updated on
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
-\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{12pt}\selectfont {#1\\} \normalfont}
+% \newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{12pt}\selectfont {#1\\} \normalfont}
+\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{9pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Section seperators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
